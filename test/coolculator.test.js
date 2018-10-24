@@ -35,4 +35,16 @@ describe('Coolculator', function() {
     result = mm.factorial(5);
     expect(result).to.equal(120);
   })
+
+  it('shoul return a random number between 0 and a given value (included)', function() {
+    randomValues = [];
+    for(let i = 0; i < 1000; i++) {
+      randomValues.push(mm.random(10));
+    }
+    min = Math.min(...randomValues);
+    max = Math.max(...randomValues);
+    
+    expect(min).to.be.at.least(0);
+    expect(min).to.be.at.most(10);
+  })
 })
