@@ -30,4 +30,9 @@ describe('Coolculator', function() {
     result = mm.divide(10, 5);
     expect(result).to.equal(2);
   })
+
+  it('should calculate the factoria', function() {
+    result = mm.factorial(5);
+    expect(result).to.equal(120);
+  })
 })
