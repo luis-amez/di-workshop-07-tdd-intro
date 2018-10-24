@@ -17,12 +17,17 @@ describe('Coolculator', function() {
   })
 
   it('should multiply', function() {
-    result = mm.multiply(2, 3)
-    expect(result).to.equal(6)
+    result = mm.multiply(2, 3);
+    expect(result).to.equal(6);
   })
 
   it('should subtract', function() {
-    result = mm.subtract(3, 2)
-    expect(result).to.equal(1)
+    result = mm.subtract(3, 2);
+    expect(result).to.equal(1);
+  })
+
+  it('should divide', function() {
+    result = mm.divide(10, 5);
+    expect(result).to.equal(2);
   })
 })
