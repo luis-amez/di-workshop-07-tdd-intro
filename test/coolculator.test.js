@@ -1,14 +1,14 @@
-var chai = require('chai')
-var expect = chai.expect
+var chai = require('chai');
+var expect = chai.expect;
 
-var Coolculator = require('../lib/coolculator')
+var Coolculator = require('../lib/coolculator');
 
 describe('Coolculator', function() {
-  mm = new Coolculator()
+  mm = new Coolculator();
 
   it('should add', function() {
-    result = mm.add(2, 3)
-    expect(result).to.equal(5)
+    result = mm.add(2, 3);
+    expect(result).to.equal(5);
   })
 
   // Uncomment this 👇
